@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<script src="libs/three.js"></script>
+<script src = "libs/keyboard.js"></script>
+<script src = "libs/physi.js"></script>
+<script src = "fonts/helvetiker_regular.typeface.js"></script>
+<link rel="stylesheet" href="css/PacStyles.css">
+</head>
+
+<body>
+	 <button id="help-button" onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'block';">HELP</button>
+
+        <div id="help-dialog" class="dialog">
+        	<h2>CONTROLS</h2>
+
+        	<p>You are controlling a FOXHOUND drone. Controls are as follows:</p>
+            <p>W = Forward</p>
+            <p>S = Backward</p>
+        	<p>A = Left</p>
+       		<p>D = Right </p>
+
+            <p>Collect five pieces of blue vital intel and return to the extraction point(It's the box where you began the game).<p>
+            <p>Created by Erick Evangeliste using THREE.JS<p>
+            <button onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'none';">Close</button>
+        </div>
+		<div id="Main">
+		<div id="MainView"></div>
+		<div id="HUDView"></div>
+	</div>
+<script src="js/pacman.js"></script>
+
+</body>
+
+</html>
